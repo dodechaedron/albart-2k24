@@ -1,0 +1,1082 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  -webkit-text-stroke: .75px black; */
+
+ 
+
+:root{ 
+    --rockOneRollFont:   "RocknRoll One", sans-serif;
+    --passionOneFont:  "Passion One", sans-serif;
+    --bodyClr:#1b426e;
+}
+
+body{
+    background-color: var(--bodyClr);
+    position: relative;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.how_to_btn .button_hover, 
+.button_hover{
+    transition: all .3s ease-in-out !important;
+} 
+
+
+.button_hover:hover{    
+    -webkit-box-shadow: 0px 0px 0px 0px #FFFFFF !important; 
+}
+
+.button_hover.green:hover{    
+    background-color: #008654 !important; 
+    border: 1px solid #008654 !important;
+    color: white !important; 
+}
+
+.bg_video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.bg_video video{
+    width: 110%;
+    height: 1100px;
+    object-fit: cover;
+    opacity: 0.07;
+
+    position: absolute;
+    left: -5%;
+    top: 0;
+}
+
+/* container styling */
+.container{
+    max-width: 100%;
+    height: auto;  
+    overflow: hidden;
+    width: 100%;
+
+    position: relative;
+}
+
+section{
+    position: relative;
+}
+
+ 
+/* components styling */
+
+/*  navbar */
+nav{
+    position: absolute;
+
+    left: 0%;
+    top: 0; 
+    z-index: 999;
+    
+    max-width: 100%;
+    width: 100%;
+    height: 100px;
+    padding: 1.5rem;  
+
+    display: flex;
+    justify-content: center;
+}
+
+
+nav .nav_container{
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+nav .logo,
+nav ul,
+nav .accessibility{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav .logo img{
+    object-fit: contain;
+    position: relative;
+    height: auto;
+    
+    width: 80px;
+}
+
+nav ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    
+    color: white;    
+    font-size: 18px;
+    font-family: var(--rockOneRollFont);
+    transition: .2s ease-in-out;
+}
+
+nav ul li:hover a{
+    color: #2f3bde;
+}
+
+nav ul .accessibility{
+    display: none;
+}
+
+nav .accessibility{ 
+    justify-content: center;
+    height: 100%; 
+}
+
+nav .accessibility .menu_btn{
+    position: relative;
+    cursor: pointer;
+    display: none; 
+
+
+    width: 35px;
+    height: 30px;  
+}
+
+.menu_btn span{
+    background: white;
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin: 1vw;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.menu_btn.active span:nth-child(1){
+    transform: rotate(45deg);
+    position: absolute;
+    top: 20%;
+}
+
+.menu_btn.active span:nth-child(2){
+    opacity: 0;
+}
+
+.menu_btn.active span:nth-child(3){
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 20%;
+}
+
+.menu_btn span:nth-child(2){
+    width: 80%;
+}
+
+.accessibility .social_media{ 
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.accessibility .social_media .social{
+    padding: 1rem;
+
+    position: relative;
+    border-radius: 16px;
+    background-color: #2f3bde;
+    border: 2px solid white;
+
+    transition: all .3s ease-in-out;
+    box-shadow: 1px 3px 0px 0px #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+.accessibility .social_media a img{
+    width:25px;
+    height: auto;
+    object-fit: contain;
+}
+
+.accessibility .social_media button{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #1B4432;
+    font-family: var(--rockOneRollFont);
+
+    border: 1px solid #1B4432;
+    box-shadow: 2px 3px 0px 0px #FFFFFF;
+
+    width: 173px;
+    height: 63px;
+    border-radius: 16px;
+}
+
+
+/* hero section */
+.hero{
+    width: 100%;
+    max-width: 1900px;
+    height: auto;
+    position: relative; 
+
+    margin: 0 auto;
+    padding: 9rem 2rem 0 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .left,
+.hero .right{
+    position: relative;
+}
+
+
+/* right hero section */
+.hero .left .intro{
+    font-family: var(--rockOneRollFont);
+    color: #FFFFFF;
+    font-weight: 100;
+    letter-spacing: 12.6px;
+    font-size: 18px;
+    
+    margin-left: 2rem;
+}
+
+.hero .left .title{
+    font-family: var(--passionOneFont);
+    color: #FFFFFF;
+    font-weight: 700; 
+    letter-spacing: 12.6px;
+    font-size: 210px;
+
+    text-shadow: 8px 10px 0px rgba(0, 0, 0, 0.986);
+}
+
+.about_hero{
+    position: relative;
+    font-family: var(--rockOneRollFont);
+    width: 791px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-left: 2rem;
+}
+
+.about_hero .about_text{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.about_hero .address{
+    position: relative;
+    width: 100%;
+    height: 70px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 2px 4px 0px 0px #FFFFFF;
+    padding: 0 1rem;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_hero .address input{
+    display: none;
+}
+
+.about_hero .address p{
+    position: relative;
+    color: black;
+    font-size: 18px;
+}
+
+.about_hero .address button{
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+
+    position: relative;
+    width: 102px;
+    height: 55px;
+    border-radius: 12px;
+    cursor: pointer;
+
+    background-color: #2f3bde;
+    border: 1px solid #2f3bde; 
+    box-shadow: 0px 4px 0px 0px #2e4f73;
+    font-family: var(--rockOneRollFont);
+}
+
+.hero_button{
+    display: flex;
+    justify-content: start;
+    gap: 1.5rem ;
+}
+
+.hero_button button{
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+
+    position: relative;
+    width: auto;
+    height: 75px;
+    border-radius: 12px;
+    padding: 0 2rem;
+    cursor: pointer;
+
+    background-color: #2f3bde;
+    border: 1px solid #2f3bde; 
+    box-shadow: 4px 4px 0px 0px #ffffff;
+    font-family: var(--rockOneRollFont);
+}
+
+/* right hero section */
+.hero .right img{
+    object-fit: contain;
+    width: auto;
+    height: 436px;
+}
+
+
+/* how to works */
+.howToWorks{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 600px;
+    margin-top: 200px;
+    background-color: #A7E0B8;
+    padding: 0 2rem;
+}
+
+.howToWorks .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.howToWorks .bg img{
+    object-fit: contain;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    position: absolute;
+
+    left: 0;
+}
+
+.howToWorks .bg img:nth-child(1){
+    top: -5vw;
+}
+
+.howToWorks .bg img:nth-child(2){
+    bottom: -5vw;
+    transform: rotate(180deg);
+}
+
+.about_howTo{
+    font-family: var(--rockOneRollFont);
+    position: relative;
+    width: 858px;
+    z-index: 1;
+}
+
+.about_howTo .join{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 12.6px;
+
+    margin-bottom: 1rem;
+}
+
+.about_howTo h2{
+    font-family: var(--passionOneFont);
+    font-size: 100px;
+    text-shadow: 6px 6px 0px white;
+}
+
+.about_howTo .about{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.how_to_btn{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    margin-top: 2rem;
+}
+
+.how_to_btn button{ 
+        color: white;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+    
+        position: relative;
+        width: auto;
+        height: 75px;
+        border-radius: 16px;
+        padding: 0 2rem;
+        cursor: pointer;
+        font-family: var(--rockOneRollFont);
+}
+
+.how_to_btn button:nth-child(1){
+    background-color: #1B4836;
+    border: 1px solid #FFFFFF;
+    box-shadow: 2px 3px 0px 0px #FFFFFF;
+}
+
+.how_to_btn button:nth-child(2){
+    background-color: #FFF;
+    color: #1B4836;
+    font-weight: 700;
+    border: 1px solid #1B4836;
+    box-shadow: 2px 3px 0px 0px #1B4836;
+}
+
+.about_img img{
+    height: auto;
+    object-fit: contain;
+    width: 408px;
+}
+
+/* tokenomics */
+.tokenomics{
+    position: relative;
+    height: 1040px;
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tokenomics h2{
+    text-align: center;
+    font-size: 100px;
+    font-family: var(--passionOneFont);
+    text-shadow: 8px 10px 0 black;
+    color: white;
+}
+
+.tokenomics .col_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.tokenomics .col_container .col{
+    position: relative;
+    box-shadow: 8px 14px 0px 0px #000000;
+    border-radius: 16px; 
+    width: 608px;
+    max-width: 100%;
+    padding: 2rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+    font-family: var(--rockOneRollFont);
+    font-size: 22px;
+    color: black;
+}
+
+.tokenomics .col_container .col p{
+    line-height: 39.6px;
+}
+
+.tokenomics .col_container .col h3{
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.tokenomics .col_left{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+.tokenomics .col.blue{
+    background-color: #70FFBE;
+    height: 249.78px;
+}
+
+.tokenomics .col.white{
+    background-color: #FFF;
+    height: 328.97px;
+} 
+
+.tokenomics .col.yellow{
+    background-color: #A7E0B8;
+    height: 602.75px;
+}
+ 
+.tokenomics .col_left .col p,
+.tokenomics .col.yellow p{
+    width: 95%;
+}
+
+
+/* contact */
+.contact{
+    width: 100%;
+    height: 678px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: #A7E0B8;
+
+    font-family: var(--rockOneRollFont);
+}
+
+.contact .logo img{
+    object-fit: contain;
+    height: auto;
+    width: 268px;
+}
+
+.contact h2{
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.contact p{
+    width: 873.79px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.contact h5{
+    font-size: 22px;
+    font-weight: 400;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+.contact .social_media{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.contact .social_media a{
+    background-color: #164333;
+    border-radius: 16px;
+    cursor: pointer;
+
+    height: 58px;
+    width: 58px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #FFFFFF;
+    box-shadow: 1px 3px 0px 0px #FFFFFF;
+}
+
+.contact .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.contact .bg .grass{
+    object-fit: contain;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    position: absolute;
+
+    left: 0;
+}
+
+.contact .bg img:nth-child(1){
+    top: -5vw;
+}
+
+
+
+
+
+
+/* media queries || responsive */
+/* max 500 px */
+@media screen and (max-width:500px) {
+    nav{
+        height: 75px;
+        padding: 0;
+    }
+
+    nav ul{
+        justify-content: start !important;
+        padding-top: 1rem !important; 
+    }
+
+    nav ul li{
+        width: 100%;
+        padding-left: 2.2rem;
+    }
+    
+    nav ul .accessibility{
+        height: auto !important;
+        margin-top: 3rem;
+    }
+
+    .menu_btn{ 
+        height: 45% !important;
+    }
+
+    .accessibility .social_media button{
+        height: 44px !important;
+        width: 144px !important;
+        font-size: 13px !important;
+    }
+    
+    /* hero section */
+    .hero{
+        margin-top: 50px;
+        padding-top: 20px !important; 
+    }
+
+    .hero .left .title{
+        font-size: 23vw !important;
+        letter-spacing: 5px;
+        text-shadow: 4px 5px 0px rgba(0, 0, 0, 0.986);
+    }
+
+    .about_hero .about_text{
+        font-size: 15px;
+    }
+
+    .about_hero .address{
+        height: 50px;
+    }
+
+    .about_hero .address p{
+        font-size: 2vw !important;
+        left: .5rem;
+    }
+
+    .about_hero .address button{
+        width: 80px;
+        height: 40px;
+        border-radius: 7px;
+
+        font-size: 13px;
+    }
+
+    .hero_button{
+        align-items: start;
+        height: 100px;
+    }
+
+    .hero_button button{
+        padding: 0 1rem;
+        height: 50px !important;
+        
+        font-size: 3.5vw;
+        
+        box-shadow: 3px 3px 0px 0px #ffffff;
+    }
+
+    /* how it works */
+    .howToWorks{
+        margin-top: 100px !important;
+    }
+
+    .about_howTo h2{
+        text-shadow: 3px 3px 0px white;
+    }
+
+    .about_howTo .join{
+        letter-spacing: 7px;
+        font-size: 16px;
+
+        margin-bottom: 0rem;
+    }
+
+    .about_howTo .about{
+        font-size: 15px;
+    }
+
+    .about_img img{
+        width: 80%;
+        margin-bottom: 2rem;
+    } 
+
+    .how_to_btn button{
+        padding: 0 1rem;
+        height: 50px !important;
+        
+        font-size: 3.5vw;
+        
+        box-shadow: 0px 3px 0px 0px #810D0D;
+    }
+
+    /* tokenomics */
+    .tokenomics .col_container .col{
+        width: 90% !important;
+        box-shadow:  5px 10px 0px 0px #000000;
+    }
+
+    .tokenomics h2 { 
+        text-shadow: 3px 6px 0 black; 
+    }
+
+    /* contact */
+    .contact{
+        height: 550px;
+    }
+
+}
+
+/* max 1024 px */
+@media screen and (max-width:1024px) {
+    /* navbar */
+    nav .nav_container{
+        padding: 0 2rem;
+    }
+
+    nav ul{
+        position: absolute;
+        flex-direction: column;
+
+        left: 0;
+        z-index: 9;
+        transition: .4s ease-in-out;
+        padding-top: 6rem;
+
+        top: -100vh;
+        width: 100%;
+        height: 100vh; 
+
+        
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(20px);
+    }
+
+    nav ul.active{
+        top: 100%;
+    }
+
+    
+    nav .logo img{ 
+        z-index: 10;
+        width: 70px;
+    }
+
+    nav ul li a{ 
+        font-size: 17px;
+    }
+
+    ul .accessibility .social_media .social{
+        padding: .5rem .95rem;
+    }
+
+    ul .accessibility .social_media .social img{
+        width: 20px;
+    }
+
+    nav ul .accessibility{
+        display: flex;
+    }
+
+    nav .accessibility{
+        display: flex; 
+        z-index: 9;
+        gap: 1rem;
+    }
+
+    nav .accessibility:not(nav ul .accessibility) .social_media .social{
+        display: none;
+    }
+
+    nav .accessibility .menu_btn{
+        display: block; 
+        height: 100%;
+    }
+
+    .accessibility .social_media button{ 
+        font-size: 15px;
+        width: 153px;
+        height: 53px;
+        border-radius: 16px;
+    }
+ 
+    /* hero section */
+    .hero{ 
+        padding: 0 !important; 
+    }
+
+    .hero .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hero .left .title{
+        font-size: 20vw !important;
+    }
+
+    .about_hero{
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .about_hero .address{
+        padding: 0 1rem;
+        justify-content: end;
+        overflow: hidden;
+    }
+
+    .about_hero .address p{
+        font-size: 15px;
+        position: absolute;
+        left: 1rem;
+    }
+
+    .hero_button button{
+        height: 65px;
+    }
+
+    .hero_button{
+        justify-content: center;
+    }
+
+    .hero .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .right img{
+        height: auto;
+        width: 80%;
+    }
+
+    /* how to works */
+    .howToWorks{
+        margin-top: 200px;
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 3rem 0;
+
+        text-align: center;
+    }
+    
+    .about_howTo{
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .about_howTo h2{
+        font-size: 13vw;
+    }
+
+    .how_to_btn{
+        justify-content: center;
+    }
+
+
+    .how_to_btn button{
+        height: 65px;
+    }
+
+    /* tokenomics */ 
+
+    .tokenomics h2{
+        font-size: 10vw;
+        margin-bottom: 20px;
+    }
+
+    .tokenomics .col_container .col_right,
+    .tokenomics .col_container .col_left,
+    .tokenomics .col_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tokenomics .col_container .col{
+        width: 75%;
+        padding: 1rem;
+        height: auto;
+
+        justify-content: start;
+    }
+
+    .tokenomics .col_container .col h3{
+        font-size: 25px;
+        margin-bottom: 1.4rem;
+    }
+
+    .tokenomics .col_container .col p{
+        font-size: 17px;
+        line-height: 24px;
+
+        margin-bottom: 1rem;
+    }
+
+    /* contact */
+    .contact{
+        margin-top: 100px;
+    }
+
+    .contact .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact .logo img{
+        width: 50%;
+    }
+
+    .contact h2{
+        font-size: 30px;
+    }
+
+    .contact p{
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .contact h5{
+        font-size: 17px;
+    }
+
+}
+
+
+
+/* max 1300 px */
+@media screen and (max-width:1300px){
+    /* hero section */
+    .hero{
+        flex-direction: column-reverse;
+        padding: 100px 0 0 0;
+        text-align: center;
+    }
+
+       /* tokenomics */
+       .tokenomics{
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+/* max 1450 px */
+@media screen and (max-width:1450px){
+    .hero .left .title{
+        font-size: 150px;
+    }
+}
+
+/* min 1700 px */
+@media screen and (min-width:1770px) { 
+    /* hero */
+    .hero .left .title{ 
+        font-size: 300px;  
+    }
+
+    .hero .left .intro,
+    .about_hero{
+        margin-left: 4rem;
+    }
+
+    .hero .right img{ 
+        height: 536px;
+    }
+
+    /* how to works */
+    .about_howTo{
+        width: 1158px;
+    }
+
+    /* tokenomics */
+    .tokenomics .col_container .col{
+        width: 748px;
+    }
+
+    .tokenomics .col_left .col p{
+        width: 626px;
+    }
+
+    .tokenomics .col.yellow p{
+        width: 586px;
+    }
+}
